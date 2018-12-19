@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>入口1例子</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/report.css">
+</head>
+<body>
+<div class="container clearfix">
+    <div class="header">
+        <a href="../../html/" class="fl"><img src="../../images/logo-2.png" alt=""></a>
+        <div class="user fr">
+            <a href="../../html/student/personal_center/personal_info_index.html">学生空间</a> /
+            <div class="links-entrance">
+                <a href="../../html/student/realism_record.html">切换到学生</a>
+                <a href="../../html/teacher/student_comment.html">切换到教师</a>
+                <a href="http://127.0.0.1/dcp">切换到校级</a>
+                <a href="../../html/country/index.html">切换到县级</a>
+                <a href="../../html/city/index.html">切换到市级</a>
+                <a href="../../html/province/data.html">切换到省级</a>
+            </div>
+            <a href="../../html/student/help.html">帮助</a>
+        </div>
+    </div>
+</div>
+<div class="nav" index="1">
+    <ul class="clearfix">
+        <li><a href="../../html/student/realism_record.html">写实记录</a></li>
+        <li><a href="../../html/student/my_comment.html">我的评价</a></li>
+        <li><a href="../../html/student/observe_points.html">我的观测点</a></li>
+        <li><a href="../../html/student/my_publicity.html">我的公示</a></li>
+        <li><a href="../../html/student/student_elegant.html">学生风采</a></li>
+        <li><a href="../../html/student/classes_zoom.html">班级空间</a></li>
+    </ul>
+</div>
+
+<div class="content" style="min-height: 500px;border: 1px solid #000;">
+内容区ss
+</div>
+
+<div class="footer">
+    <ul class="links">
+        <li><a href="">法律声明</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="">呼叫中心</a></li>
+        <li><a href="">常见问题</a></li>
+        <li><a href="">在线反馈</a></li>
+    </ul>
+    <p>CopyRight ©2018xxxxxxxx技术有限公司所有</p>
+    <p>京ICP备1000000号-1</p>
+</div>
+<script src="../../lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="../../lib/layui/layui.js"></script>
+<script>
+    $(function () {
+        var index = $('.nav').attr('index')
+        $('.nav ul li').eq(index).addClass('active')
+    })
+</script>
+
+<script>
+  $(function () {
+
+
+  })
+</script>
+</body>
+</html>

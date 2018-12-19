@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var cssMin = require('gulp-clean-css');
 var less = require('gulp-less');
 var autoprefixer = require('gulp-autoprefixer');
+var replace = require('gulp-replace');
 
 var browserArr = ['last 2 versions', 'ie 9'];
 
@@ -19,8 +20,9 @@ var app = {  // 定义目录
 // 处理入口html  注意:打包后链接需要手动修改相对路径!!!
 gulp.task('entrance', function () {
   return gulp.src('./index.html')
+    .pipe(replace(/="\.\/dist\/html\//gm, '="./html/'))
     .pipe(gulp.dest(app.buildPath))
-    .pipe(gulp.dest(app.distPath));
+    .pipe(gulp.dest(app.distPath))
 });
 
 // 处理公用html

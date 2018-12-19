@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "gulp-less": "^3.5.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp-replace": "^1.0.0"
   }
 }
